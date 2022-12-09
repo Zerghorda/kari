@@ -93,7 +93,7 @@ tr:nth-child(odd){
     table{
         border:1px blue solid ;
         border-collapse: collapse;
-        size: 80%;
+
     }   
 }
 @media only screen and (max-width: 200px){
@@ -113,6 +113,5 @@ tr:nth-child(odd){
     table{
         border:1px blue solid ;
         border-collapse: collapse;
-        size: 80%;
     }   
 }
