@@ -1,0 +1,118 @@
+body{
+    background-image: url(kepek/hatter.jpg);
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(kepek/fejlec.jpg);
+    text-align: center;
+    padding: 80px;
+    grid-area: h;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 80%;
+    background-color: aliceblue;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas:
+    "h h h"
+    "n a as"
+    "f f f";
+}
+article{
+    grid-area: a;
+    margin: 5px;
+}
+nav{
+    grid-area: n;
+}
+aside{
+    grid-area: as;
+    border-left: 1px blue solid ;
+    border-top: 1px blue solid;
+    text-align: left;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: rgb(0, 183, 255);
+    padding: 20px;
+}
+table{
+    border:1px blue solid ;
+    border-collapse: collapse;
+}
+td{
+    border-top:1px blue solid;
+    padding: 5px;
+}
+nav li{
+    background-color: rgb(4, 0, 255);
+    list-style-type: none;
+    height:40px;
+    width: 80%;
+    margin: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+article a{color: purple ;
+
+}
+tr:nth-child(odd){
+    background-color: rgb(131, 241, 241);
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-image: url(kepek/hatter.jpg);
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        background-image: url(kepek/fejlec.jpg);
+        text-align: center;
+        padding: 80px;
+        grid-area: h;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+    }
+    table{
+        border:1px blue solid ;
+        border-collapse: collapse;
+        size: 80%;
+    }   
+}
+@media only screen and (max-width: 200px){
+    body{
+        background-image: url(kepek/hatter.jpg);
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        background-image: url(kepek/fejlec.jpg);
+        text-align: center;
+        padding: 80px;
+        grid-area: h;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+    }
+    table{
+        border:1px blue solid ;
+        border-collapse: collapse;
+        size: 80%;
+    }   
+}
